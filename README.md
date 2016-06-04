@@ -15,12 +15,21 @@ Plugin the Neurosky dongle, then run
 
     dmesg
 
-to find the USB port with the dongle. 
+to find the USB port with the dongle. In test_mindwave.py, change the line
+
+    headset = mindwave.Headset('/dev/ttyUSB3', '1E5F')
+
+for the correct USB port and the Neurosky serial from inside the battery box.
+
+Run the test script
+-------------------------
+
+    python2 test_mindwave.py
 
 Changes
 ============
 
-*Added test_mindwave.py for a simple functionality test
+* Added test_mindwave.py for a simple functionality test
 
 
 mindwave-python - Original Readme
