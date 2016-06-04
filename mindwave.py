@@ -139,6 +139,7 @@ class Headset(object):
                     value, payload = payload[:vlength], payload[vlength:]
                     # Multi-byte EEG and Raw Wave codes not included
                     # Raw Value added due to Mindset Communications Protocol
+                    print value, payload
                     if code == RAW_VALUE:
                         raw=ord(value[0])*256+ord(value[1])
                         if (raw>=32768):

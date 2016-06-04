@@ -27,7 +27,7 @@ Run the test script
     python2 test_mindwave.py
 
 Changes
-============
+--------------
 
 * Added test_mindwave.py for a simple functionality test
 
