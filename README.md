@@ -1,4 +1,29 @@
-mindwave-python
+Fork
+===============
+This is a fork of the great mindwave-python from Moonshot Barkley at https://github.com/BarkleyUS/mindwave-python. Thanks for sharing!
+
+This is the only code i found working with the wireless (non-bluetooth) Neurosky MindWave.
+
+Installation (Linux)
+-------------
+
+Download the code with
+    
+    wget https://github.com/JoBergs/mindwave-python
+
+Plugin the Neurosky dongle, then run
+
+    dmesg
+
+to find the USB port with the dongle. 
+
+Changes
+============
+
+*Added test_mindwave.py for a simple functionality test
+
+
+mindwave-python - Original Readme
 ===============
 
 Linux and Mac-friendly Python parser to connect and interact with multiple NeuroSky MindWave headsets from one machine.
