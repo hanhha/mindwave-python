@@ -2,7 +2,10 @@ Fork
 ===============
 This is a fork of the great mindwave-python from Moonshot Barkley at https://github.com/BarkleyUS/mindwave-python. Thanks for sharing!
 
-This is the only code i found working with the wireless (non-bluetooth) Neurosky MindWave.
+This is the only code i found working with the wireless (non-bluetooth) Neurosky MindWave. This fork is for the Raspberry Pi and contains a script for displaying the attention level with an LED.
+
+Checkout the tutorial at 
+http://www.knight-of-pi.org/raspberry-pi-mindcontrol-neurosky-mindwave-as-simple-eeg-interface
 
 Installation (Linux)
 -------------
@@ -26,10 +29,15 @@ Run the test script
 
     python2 test_mindwave.py
 
+or attach an LED like shown in rpi_with_led.png and run
+
+    python2 mindwave_LED.py
+
 Changes
 --------------
 
 * Added test_mindwave.py for a simple functionality test
+* Added mindwave_LED.py for demonstrating attention level with an LED
 
 
 mindwave-python - Original Readme
