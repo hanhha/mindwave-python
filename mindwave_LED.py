@@ -11,7 +11,7 @@ pwm_LED = GPIO.PWM(LED, 100)
 pwm_LED.start(0)
 
 # setup headset
-headset = mindwave.Headset('/dev/ttyUSB3', '1E5F')
+headset = mindwave.Headset('/dev/ttyUSB0', '1E5F')
 time.sleep(2)
 
 headset.connect()
@@ -27,8 +27,8 @@ print "Connected."
 while True:
     time.sleep(.5)
     print "Attention: %s, Meditation: %s" % (headset.attention, headset.meditation)
-    if headset.attention > 30:
-        pwm_LED.ChangeDutyCycle(min(100, headset.attention)) 
+    if headset.attention > 50:
+        pwm_LED.ChangeDutyCycle(min(100, headset.attention - 50)) 
 
 
 
