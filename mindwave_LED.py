@@ -27,8 +27,11 @@ print "Connected."
 while True:
     time.sleep(.5)
     print "Attention: %s, Meditation: %s" % (headset.attention, headset.meditation)
-    if headset.attention > 50:
-        pwm_LED.ChangeDutyCycle(min(100, headset.attention - 50)) 
+    if headset.attention > 30:
+        pwm_LED.ChangeDutyCycle(min(100, headset.attention-30))
+    else:        
+        pwm_LED.ChangeDutyCycle(0)
+
 
 
 
