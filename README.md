@@ -1,6 +1,6 @@
 Fork
 ===============
-This is a fork of the great mindwave-python from Moonshot Barkley at https://github.com/BarkleyUS/mindwave-python. Thanks for sharing!
+This is forked from the great mindwave-python from Moonshot Barkley at https://github.com/BarkleyUS/mindwave-python. Thanks for sharing!
 
 This is the only code i found working with the wireless (non-bluetooth) Neurosky MindWave. This fork is for the Raspberry Pi and contains a script for displaying the attention level with an LED.
 
