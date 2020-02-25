@@ -1,5 +1,13 @@
 Fork
 ===============
+I forked this to make it Python3 compatible. I also do not like list of handlers so that I modify the use SetCallback method to set only 1 callback for each event.
+
+A Jupyter notebook is added to demo showing in graphs and progress bar (require Matplotlib and tqdm libraries).
+
+Example for using SetCallback will be added later.
+
+From JoBergs (whom I forked from)
+----------------
 This is forked from the great mindwave-python from Moonshot Barkley at https://github.com/BarkleyUS/mindwave-python. Thanks for sharing!
 
 This is the only code i found working with the wireless (non-bluetooth) Neurosky MindWave. This fork is for the Raspberry Pi and contains a script for displaying the attention level with an LED.
